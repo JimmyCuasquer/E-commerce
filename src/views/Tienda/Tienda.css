@@ -1,0 +1,18 @@
+.product-list{
+    width:  80%;
+    margin: auto;
+    margin-top: 150px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.imgesCart{
+    max-width: 100%;;
+
+}
+.cartimg{
+border: solid;
+width: 150px;
+justify-content: center;
+}
