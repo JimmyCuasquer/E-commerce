@@ -11,10 +11,8 @@ cart: []
 
 const reducer =(state, action ) =>{
     switch (action.type) {    
-        case "ADD":
-            console.log(action.payload)
-            const itemOnCart = state.cart.find((valor)=> valor.id === action.payload.id)
-            return itemOnCart ? {
+        case "ADD": 
+            return state.cart.find((valor)=> valor.id === action.payload.id) ? {
                 ...state,
                 totalPrice: state.totalPrice + action.payload.price,
                 cart: state.cart.map(valor =>
@@ -29,7 +27,6 @@ const reducer =(state, action ) =>{
             return{
                 ...state,
                 totalPrice: state.totalPrice - action.payload.price,
-                //cart:  [...state.cart, state.cart.splice(action.payload.id, 1)]
                 cart: state.cart.filter(product => product.id !== action.payload.id)
             }
         default:
