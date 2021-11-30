@@ -21,9 +21,7 @@ const Product = ({name, description,img, price, id,stock }) =>{
         // eslint-disable-next-line
     },[])
 
-   const handleDispatch =(payload) => {
-
-       console.log(stock);  
+   const handleDispatch =(payload) => {  
      dispatch({ type: "ADD", payload})
     }
 return(

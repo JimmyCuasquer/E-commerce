@@ -4,7 +4,6 @@ import Pay from '../../components/Pagos/Pay'
 
 const Pagos = () => {
     return (
-
         <Pay />
     )
 }
